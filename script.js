@@ -2,7 +2,7 @@
 function decimalToBinary(x) {
   //Write you code here
 
-	 let x  = 10;
+	
 
     let arr =[];
 
