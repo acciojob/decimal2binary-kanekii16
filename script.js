@@ -1,19 +1,23 @@
 
 function decimalToBinary(x) {
   //Write you code here
-	
-	
-	let num = 0;
-	 while(true){
-        num = (num * 10 )+ x % 2
+
+	 let x  = 10;
+
+    let arr =[];
+
+    // console.log(x/2);
+    while(x != 0){
+        arr.push(x%2);
         x = Math.floor(x/2);
-        if(x==0){
-           break;
-        }
-    } 
-	let result = "";
+
+    }
+    arr = arr.reverse();
+    let res = arr.toString();
+    let temp = res.replace(/,/g,"");
+    
 	
-	return result + num;
+	return temp;
 }
 
 window.decimalToBinary = decimalToBinary;
