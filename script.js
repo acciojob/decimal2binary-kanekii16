@@ -6,9 +6,10 @@ function decimalToBinary(x) {
         result = (result * 10 )+ x % 2
         x = Math.floor(x/2);
         if(x==0){
-            return result;
+           break;
         }
-    }   
+    } 
+	return result;
 }
 
 window.decimalToBinary = decimalToBinary;
